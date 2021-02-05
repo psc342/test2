@@ -6,13 +6,13 @@
 /*   By: sangchpa <sangchpa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 16:23:16 by sangchpa          #+#    #+#             */
-/*   Updated: 2021/02/05 16:23:58 by sangchpa         ###   ########.fr       */
+/*   Updated: 2021/02/05 16:40:44 by sangchpa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
 
-size_t	ft_strlen(const char *s)
+size_t		ft_strlen(const char *s)
 {
 	size_t	len;
 
@@ -24,7 +24,7 @@ size_t	ft_strlen(const char *s)
 	return (len);
 }
 
-char	*ft_strdup(const char *s1)
+char		*ft_strdup(const char *s1)
 {
 	int		i;
 	int		s1_len;
@@ -44,7 +44,7 @@ char	*ft_strdup(const char *s1)
 	return (p);
 }
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	len;
@@ -64,13 +64,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (len);
 }
 
-
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+size_t		ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t dst_len;
-	size_t src_len;
-	size_t i;
-	size_t j;
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	i;
+	size_t	j;
 
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
@@ -88,7 +87,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (src_len + dst_len);
 }
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char		*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*p;
 	int		s1_len;
@@ -105,4 +104,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat((p + s1_len), s2, s2_len + 1);
 	return (p);
 }
-

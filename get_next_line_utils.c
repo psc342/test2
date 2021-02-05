@@ -6,7 +6,7 @@
 /*   By: sangchpa <sangchpa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 15:49:10 by sangchpa          #+#    #+#             */
-/*   Updated: 2021/02/05 16:23:57 by sangchpa         ###   ########.fr       */
+/*   Updated: 2021/02/05 16:40:45 by sangchpa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = 0;
 	return (len);
 }
-
 
 size_t		ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

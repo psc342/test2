@@ -6,7 +6,7 @@
 /*   By: sangchpa <sangchpa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 16:23:54 by sangchpa          #+#    #+#             */
-/*   Updated: 2021/02/05 16:23:56 by sangchpa         ###   ########.fr       */
+/*   Updated: 2021/02/05 16:40:22 by sangchpa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ static int		last_backup_buf(char **backup_buf, char **line, int read_byte)
 		*line = ft_strdup("");
 	return (0);
 }
+
 int				get_next_line(int fd, char **line)
 {
 	static char	*backup_buf[OPEN_MAX];
